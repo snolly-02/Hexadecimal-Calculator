@@ -1,6 +1,6 @@
 # Hexadecimal-Calculator
 
-Category	Functional Requirements
+Functional Requirements
 
 Input Validation	
 - Accept only valid hexadecimal numbers (0-9, A-F).
