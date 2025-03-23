@@ -1,7 +1,8 @@
 # Hexadecimal-Calculator
 
 Category	Functional Requirements
-Input Validation	- Accept only valid hexadecimal numbers (0-9, A-F).
+Input Validation	
+- Accept only valid hexadecimal numbers (0-9, A-F).
 - Support up to 2-digit hexadecimal inputs (00 to FF).
 - Convert lowercase letters to uppercase (e.g., a3 → A3).
 - Reject invalid characters (e.g., G, Z, special characters, spaces).
