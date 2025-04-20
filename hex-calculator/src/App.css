@@ -1,0 +1,105 @@
+/* Centering the app */
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #1e1e2f, #111);
+}
+
+/* Main calculator container */
+.calculator-container {
+  width: 350px;
+  height: 100vh; 
+  padding: 2rem;
+  background: #1e1e2f;
+  border-radius: 2rem;
+  box-shadow: 8px 8px 15px #0f0f17, -8px -8px 15px #2e2e47;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+/* Title */
+h1 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #89CFF0;
+  letter-spacing: 1px;
+}
+
+/* Calculator screen */
+.screen {
+  background: #000000cc;
+  color: #89CFF0;
+  font-size: 2.2rem;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: inset 4px 4px 8px #0d0d14, inset -4px -4px 8px #2c2c48;
+  text-align: right;
+  min-height: 3rem;
+  overflow-x: auto;
+}
+
+/* Grid layout for buttons */
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+/* Buttons */
+.button-grid button {
+  background: #2a2a3d;
+  border: none;
+  border-radius: 1rem;
+  padding: 1.2rem;
+  font-size: 1.2rem;
+  color: #fff;
+  box-shadow: 4px 4px 8px #12121b, -4px -4px 8px #383858;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.button-grid button:hover {
+  background: #3a3a5a;
+  transform: translateY(-2px);
+}
+
+/* Operation buttons */
+.button-grid .op {
+  background: #0044ff;
+  color: white;
+}
+
+.button-grid .op:hover {
+  background: #0066ff;
+}
+
+/* Equals button */
+.button-grid .equals {
+  grid-column: span 2;
+  background: #008000;
+}
+
+.button-grid .equals:hover {
+  background: #00b300;
+}
+
+/* Clear button */
+.button-grid .clear {
+  grid-column: span 2;
+  background: #800000;
+}
+
+.button-grid .clear:hover {
+  background: #cc0000;
+}
+
+/* Error message */
+.error-message {
+  color: #ff4d4d;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
