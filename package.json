@@ -11,6 +11,12 @@
   "description": "",
   "devDependencies": {
     "jest": "^29.7.0"
+  },
+  "type": "module", // Tells Node.js to treat .js files as ES modules
+  "jest": {
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    }
   }
 
  
